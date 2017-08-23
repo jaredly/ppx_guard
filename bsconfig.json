@@ -1,0 +1,17 @@
+{
+  "name": "ppx_autoserialize",
+  "version": "0.1.0",
+  "sources": [
+    "./src"
+  ],
+  "entries": [
+    {"kind": "native", "main": "Ppx_guard"}
+  ],
+  "bsc-flags": ["-w", "+40", "-w", "-30", "-bs-super-errors"],
+  "ocamlfind-dependencies": [
+    "ocaml-migrate-parsetree"
+  ],
+  "ppx-flags": [
+    "ppx_metaquot_403"
+  ]
+}

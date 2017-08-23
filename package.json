@@ -1,0 +1,19 @@
+{
+  "name": "ppx_guard",
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bs-platform": "git+https://github.com/bsansouci/bsb-native.git",
+    "ppx_tools_bs": "git+https://github.com/jaredly/ppx_tools_bs.git"
+  },
+  "scripts": {
+    "build": "bsb -make-world -backend native",
+    "postinstall": "bsb -make-world -backend native",
+    "clean": "bsb -clean-world"
+  },
+  "bin": "./ppx_guard.sh",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
