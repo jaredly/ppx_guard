@@ -18,7 +18,13 @@ let show_error input result expected => {
 
 let fixtures = [(
   [%str let doit something => {
-    [%guard let Ok value = doAnAction something][@else None];
+    [%guard let Ok value = doAnAction something]
+    [@else None];
+
+    [%guard let Ok value = doAnAction something];
+    [%else None];
+
+    [%guard let Ok value = doAnAction something; None];
     /* etc */
     Some 10
   }],

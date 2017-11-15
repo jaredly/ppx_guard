@@ -1,5 +1,5 @@
 {
-  "name": "ppx_autoserialize",
+  "name": "ppx_guard",
   "version": "0.1.0",
   "sources": [
     "./src"
