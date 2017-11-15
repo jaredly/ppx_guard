@@ -1,6 +1,4 @@
 
-open Migrate_parsetree.Ast_403;
-
 let fail loc txt => raise (Location.Error (Location.error ::loc txt));
 
 let process_let contents loc => {
@@ -25,7 +23,7 @@ let getExpr contents loc => {
   }
 };
 
-let mapper = Parsetree.{
+let mapper _args => Parsetree.{
   ...Ast_mapper.default_mapper,
 
   expr: fun mapper expr => {
